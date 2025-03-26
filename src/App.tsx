@@ -4,15 +4,15 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "./components/ui/toaster";
 import NotFound from "./pages/not-found";
 import AuthPage from "./pages/auth-page";
-import { AuthProvider } from "./hooks/use-auth.tsx";
+import { AuthProvider } from "./hooks/use-auth";
 import { ProtectedRoute } from "./lib/protected-route";
 import DashboardPage from "./pages/dashboard-page";
-import PerformancePage from "./pages/performance-page.tsx";
-import NutritionPage from "./pages/nutrition-page.tsx";
-import InjuriesPage from "./pages/injuries-page.tsx";
-import FinancesPage from "./pages/finances-page.tsx";
-import AiCoachPage from "./pages/ai-coach-page.tsx";
-import SettingsPage from "./pages/settings-page.tsx";
+import PerformancePage from "./pages/performance-page";
+import NutritionPage from "./pages/nutrition-page";
+import InjuriesPage from "./pages/injuries-page";
+import FinancesPage from "./pages/finances-page";
+import AiCoachPage from "./pages/ai-coach-page";
+import SettingsPage from "./pages/settings-page";
 
 function Router() {
   return (
