@@ -1,6 +1,6 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { PerformanceMetric, NutritionLog, Injury } from "server/schema";
+import { Card, CardContent } from "../../components/ui/card";
+import { Button } from "../../components/ui/button";
+import { PerformanceMetric, NutritionLog, Injury } from "../schema";
 import { BarChart3, Utensils, ClipboardCheck } from "lucide-react";
 
 interface ActivityLogProps {

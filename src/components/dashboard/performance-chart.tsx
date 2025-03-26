@@ -1,8 +1,8 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { PerformanceMetric } from "server/schema";
+import { Card, CardContent } from "../../components/ui/card";
+import { PerformanceMetric } from "../schema";
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
+import { Button } from "../../components/ui/button";
 
 interface PerformanceChartProps {
   metrics: PerformanceMetric[];
