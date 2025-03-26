@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useAuth } from "..//hooks/use-auth";
 import { AppLayout } from "..//components/layout/app-layout";
-import { useQuery } from "@/tanstack/react-query";
+import { useQuery } from "@tanstack/react-query";
 import { 
   Card, 
   CardContent, 
