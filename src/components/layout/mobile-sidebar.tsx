@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { useAuth } from "@/hooks/use-auth";
-import { cn } from "@/lib/utils";
+import { useAuth } from "../../hooks/use-auth";
+import { cn } from "../../lib/utils";
 import { Link, useLocation } from "wouter";
 import { 
   BarChart3, 
@@ -14,7 +14,7 @@ import {
   Menu,
   X
 } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "../../components/ui/button";
 
 export function MobileSidebar() {
   const [isOpen, setIsOpen] = useState(false);

@@ -1,5 +1,5 @@
-import { useAuth } from "@/hooks/use-auth";
-import { cn } from "@/lib/utils";
+import { useAuth } from "../../hooks/use-auth";
+import { cn } from "../../lib/utils";
 import { Link, useLocation } from "wouter";
 import { 
   BarChart3, 
@@ -11,7 +11,7 @@ import {
   Settings,
   LogOut
 } from "lucide-react";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback } from "../../components/ui/avatar";
 
 interface SidebarProps {
   className?: string;
