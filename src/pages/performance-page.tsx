@@ -19,7 +19,7 @@ import {
   DialogTrigger 
 } from "../components/ui/dialog";
 import { PerformanceForm } from "../components/forms/performance-form";
-import { PerformanceMetric } from "@server/schema";
+import { PerformanceMetric } from "../components/schema";
 import { 
   LineChart, 
   Line, 
