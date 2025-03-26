@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { useAuth } from "@/hooks/use-auth";
-import { AppLayout } from "@/components/layout/app-layout";
+import { useAuth } from "..//hooks/use-auth";
+import { AppLayout } from "..//components/layout/app-layout";
 import { useQuery } from "@tanstack/react-query";
 import { 
   Card, 
@@ -9,11 +9,11 @@ import {
   CardTitle, 
   CardDescription, 
   CardFooter 
-} from "@/components/ui/card";
-import { CoachAdvice } from "@/components/ai-coach/coach-advice";
-import { TrainingPlan } from "@/components/ai-coach/training-plan";
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-import { PerformanceMetric, NutritionLog, Injury } from "server/schema";
+} from "..//components/ui/card";
+import { CoachAdvice } from "..//components/ai-coach/coach-advice";
+import { TrainingPlan } from "..//components/ai-coach/training-plan";
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "..//components/ui/tabs";
+import { PerformanceMetric, NutritionLog, Injury } from "../components/schema";
 import { Loader2, Lightbulb, Dumbbell, Brain } from "lucide-react";
 
 export default function AiCoachPage() {
