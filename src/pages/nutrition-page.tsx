@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { useAuth } from "@/hooks/use-auth";
-import { AppLayout } from "@/components/layout/app-layout";
+import { useAuth } from "../hooks/use-auth";
+import { AppLayout } from "../components/layout/app-layout";
 import { useQuery } from "@tanstack/react-query";
 import { 
   Card, 
@@ -9,18 +9,18 @@ import {
   CardTitle, 
   CardDescription, 
   CardFooter 
-} from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
+} from "../components/ui/card";
+import { Button } from "../components/ui/button";
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "../components/ui/tabs";
 import { 
   Dialog, 
   DialogContent, 
   DialogHeader, 
   DialogTitle, 
   DialogTrigger 
-} from "@/components/ui/dialog";
-import { NutritionForm } from "@/components/forms/nutrition-form";
-import { NutritionLog } from "server/schema";
+} from "../components/ui/dialog";
+import { NutritionForm } from "../components/forms/nutrition-form";
+import { NutritionLog } from "../components/schema";
 import { 
   PieChart, 
   Pie, 
