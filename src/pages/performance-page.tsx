@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { useAuth } from "@/hooks/use-auth";
-import { AppLayout } from "@/components/layout/app-layout";
+import { useAuth } from "../hooks/use-auth";
+import { AppLayout } from "../components/layout/app-layout";
 import { useQuery } from "@tanstack/react-query";
 import { 
   Card, 
@@ -8,18 +8,18 @@ import {
   CardHeader, 
   CardTitle, 
   CardDescription 
-} from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
+} from "../components/ui/card";
+import { Button } from "../components/ui/button";
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "../components/ui/tabs";
 import { 
   Dialog, 
   DialogContent, 
   DialogHeader, 
   DialogTitle, 
   DialogTrigger 
-} from "@/components/ui/dialog";
-import { PerformanceForm } from "@/components/forms/performance-form";
-import { PerformanceMetric } from "server/schema";
+} from "../components/ui/dialog";
+import { PerformanceForm } from "../components/forms/performance-form";
+import { PerformanceMetric } from "@server/schema";
 import { 
   LineChart, 
   Line, 
