@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { useAuth } from "@/hooks/use-auth";
-import { AppLayout } from "@/components/layout/app-layout";
-import { useQuery } from "@tanstack/react-query";
+import { useAuth } from "..//hooks/use-auth";
+import { AppLayout } from "..//components/layout/app-layout";
+import { useQuery } from "@/tanstack/react-query";
 import { 
   Card, 
   CardContent, 
@@ -9,18 +9,18 @@ import {
   CardTitle, 
   CardDescription, 
   CardFooter 
-} from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
+} from "..//components/ui/card";
+import { Button } from "..//components/ui/button";
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "..//components/ui/tabs";
 import { 
   Dialog, 
   DialogContent, 
   DialogHeader, 
   DialogTitle, 
   DialogTrigger 
-} from "@/components/ui/dialog";
-import { FinanceForm } from "@/components/forms/finance-form";
-import { Finance } from "server/schema";
+} from "..//components/ui/dialog";
+import { FinanceForm } from "..//components/forms/finance-form";
+import { Finance } from "../components/schema";
 import { 
   BarChart, 
   Bar, 
@@ -43,7 +43,7 @@ import {
   SelectItem, 
   SelectTrigger, 
   SelectValue 
-} from "@/components/ui/select";
+} from "..//components/ui/select";
 import { format, subDays, isWithinInterval, startOfMonth, endOfMonth } from "date-fns";
 
 export default function FinancesPage() {
