@@ -1,15 +1,15 @@
-import { useAuth } from "@/hooks/use-auth";
-import { AppLayout } from "@/components/layout/app-layout";
+import { useAuth } from "../hooks/use-auth";
+import { AppLayout } from "../components/layout/app-layout";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+} from "../components/ui/card";
+import { Button } from "../components/ui/button";
+import { Input } from "../components/ui/input";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "../components/ui/tabs";
 import { 
   Form, 
   FormControl, 
@@ -17,14 +17,14 @@ import {
   FormField, 
   FormItem, 
   FormLabel 
-} from "@/components/ui/form";
-import { Switch } from "@/components/ui/switch";
-import { toast } from "@/hooks/use-toast";
+} from "../components/ui/form";
+import { Switch } from "../components/ui/switch";
+import { toast } from "../hooks/use-toast";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { useState } from "react";
-import { ThemeProvider, useTheme } from "@/components/ui/theme-provider";
+import { ThemeProvider, useTheme } from "../components/ui/theme-provider";
 import { Settings, User, Moon, Sun, BellRing, BellOff, Lock, Mail } from "lucide-react";
 
 const profileFormSchema = z.object({
@@ -62,7 +62,7 @@ export default function SettingsPage() {
     defaultValues: {
       name: user?.name || "",
       username: user?.username || "",
-      email: "athlete@example.com", // Placeholder, would come from user object in a real app
+      email: "athlete..example.com", // Placeholder, would come from user object in a real app
     },
   });
 
@@ -219,7 +219,7 @@ export default function SettingsPage() {
                             <FormItem>
                               <FormLabel>Email</FormLabel>
                               <FormControl>
-                                <Input placeholder="email@example.com" {...field} />
+                                <Input placeholder="email..example.com" {...field} />
                               </FormControl>
                               <FormDescription>
                                 Email address used for notifications and account recovery.
