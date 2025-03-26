@@ -3,14 +3,14 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { insertPerformanceMetricSchema } from "../schema";
-import { Button } from "../components/ui/button";
-import { Input } from "../components/ui/input";
-import { Textarea } from "../components/ui/textarea";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../components/ui/select";
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "../components/ui/form";
-import { useMutation } from "..tanstack/react-query";
-import { apiRequest, queryClient } from "../lib/queryClient";
-import { useToast } from "../hooks/use-toast";
+import { Button } from "../../components/ui/button";
+import { Input } from "../../components/ui/input";
+import { Textarea } from "../../components/ui/textarea";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../../components/ui/select";
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "../../components/ui/form";
+import { useMutation } from "@tanstack/react-query";
+import { apiRequest, queryClient } from "../../lib/queryClient";
+import { useToast } from "../../hooks/use-toast";
 
 const formSchema = insertPerformanceMetricSchema
   .extend({
